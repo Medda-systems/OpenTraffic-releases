@@ -11,8 +11,11 @@ This repository holds OpenTraffic's releases and its update feed.
 
 ```sh
 brew tap medda-systems/tap
+brew trust --cask medda-systems/tap/opentraffic
 brew install --cask opentraffic
 ```
+
+Homebrew asks you to trust casks from taps outside its official collection; the second line trusts just this one.
 
 Or download the disk image from the [latest release](https://github.com/Medda-systems/OpenTraffic-releases/releases/latest),
 open it, and drag OpenTraffic into Applications. Installed copies update themselves.
