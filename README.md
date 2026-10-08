@@ -9,6 +9,16 @@ This repository holds OpenTraffic's releases and its update feed.
 
 ## Install
 
+In Terminal:
+
+```sh
+curl -fsSL https://github.com/Medda-systems/OpenTraffic-releases/releases/latest/download/install.sh | sh
+```
+
+This downloads the latest release, checks its checksum and signature, and puts OpenTraffic in Applications.
+
+With Homebrew:
+
 ```sh
 brew tap medda-systems/tap
 brew trust --cask medda-systems/tap/opentraffic
@@ -20,7 +30,7 @@ Homebrew asks you to trust casks from taps outside its official collection; the 
 Or download the disk image from the [latest release](https://github.com/Medda-systems/OpenTraffic-releases/releases/latest),
 open it, and drag OpenTraffic into Applications. Installed copies update themselves.
 
-Releases aren't notarized yet, so macOS blocks the first launch. On macOS 15 or later, open
+Releases aren't notarized yet, so when installed from the disk image or Homebrew, macOS blocks the first launch. On macOS 15 or later, open
 **System Settings → Privacy & Security** and click **Open Anyway**; on macOS 14, Control-click the app
 and choose **Open**.
 
